@@ -1,0 +1,23 @@
+/*
+Theme Name:stefani_wp
+Theme URI: urltema
+Description:
+Version:
+Author:
+Author URI:
+Tags:
+*/
+
+
+body{
+
+  background-color: lightgreen;
+}
+
+.altodx{
+
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
