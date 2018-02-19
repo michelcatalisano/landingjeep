@@ -25,22 +25,32 @@
 
 // ** Impostazioni MySQL - È possibile ottenere queste informazioni dal proprio fornitore di hosting ** //
 /** Il nome del database di WordPress */
-define('DB_NAME', 'stefani_wp');
+define('DB_NAME', 'landingjeep');
 
 /** Nome utente del database MySQL */
 define('DB_USER', 'root');
 
 /** Password del database MySQL */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '');
 
 /** Hostname MySQL  */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '127.0.0.1');
 
 /** Charset del Database da utilizzare nella creazione delle tabelle. */
 define('DB_CHARSET', 'utf8mb4');
 
 /** Il tipo di Database Collation. Da non modificare se non si ha idea di cosa sia. */
 define('DB_COLLATE', '');
+
+/** URL del sito in locale. */
+define('WP_HOME','http://localhost/landingjeep/');
+define('WP_SITEURL','http://localhost/landingjeep/');
+
+/** Installare plugin da back end senza le credenziali FTP. */
+define('FS_METHOD','direct');
+
+/** Espande il limite della memoria utilizzabile. */
+define('WP_MEMORY_LIMIT', '256M');
 
 /**#@+
  * Chiavi Univoche di Autenticazione e di Salt.
@@ -79,7 +89,7 @@ $table_prefix  = 'wp_';
  * È fortemente raccomandato agli svilupaptori di temi e plugin di utilizare
  * WP_DEBUG all’interno dei loro ambienti di sviluppo.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* Finito, interrompere le modifiche! Buon blogging. */
 

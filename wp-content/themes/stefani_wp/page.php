@@ -1,11 +1,11 @@
 <?php
 /*
-Template Name: Pagina generica
+Template Name: Page
 Version: 1.0
 */
+
 get_header(); ?>
 <div class="altodx">
-
   <?php the_field('testo_in_alto_a_dx'); ?>
 </div>
 
