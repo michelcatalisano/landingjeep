@@ -5,18 +5,20 @@ Version: 1.0
 */
 get_header(); ?>
 
-<!-- thumbnail pagina -->
-<?php if( has_post_thumbnail()) { the_post_thumbnail(); } ?>
+<div id="page">
+  <div class="container">
+    <!-- contenuto della pagina -->
+    <?php while ( have_posts() ) : the_post(); ?>
+      <?php
+        get_template_part('template-parts/section', '01');
+        get_template_part('template-parts/section', '02');
+        get_template_part('template-parts/section', '03');
+        get_template_part('template-parts/section', '04');
+        get_template_part('template-parts/section', 'slideshow');
+        get_template_part('template-parts/section', 'form');
+      ?>
+    <?php endwhile; ?>
+  </div>
+</div>
 
-<!-- titolo -->
-<?php the_title(); ?>
-
-<!-- contenuto della pagina -->
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <?php the_content(); ?>
-    <?php endwhile; else: ?>
-    <p><?php _e('Nessun articolo corrisponde ai criteri di ricerca.'); ?></p>
-<?php endif; ?>
-
-<!-- footer -->
 <?php get_footer(); ?>
