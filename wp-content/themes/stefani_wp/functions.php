@@ -26,6 +26,7 @@ register_sidebar( array(
 
 function landingjeep_scripts() {
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/main.css');
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
 }
 add_action( 'wp_enqueue_scripts', 'landingjeep_scripts' );
 
